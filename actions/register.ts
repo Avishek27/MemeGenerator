@@ -42,7 +42,7 @@ export const Register = async (values: z.infer<typeof RegisterSchema>) => {
     }catch(err){
       console.log(err);
       return {
-        error: err
+        error: "Something went wrong. Please try again."
       }
     }
     
